@@ -1,7 +1,7 @@
 ---
-name: DNSControl CLI Action
+name: StackExchange DNSCONTROL
 description: Check, preview and deploy your DNS configuration to multiple providers
-author: William Gérald Blondel <contact@williamblondel.fr>
+author: Soundarahari Parthiban
 branding:
   icon: cloud
   color: yellow
