@@ -1,6 +1,6 @@
 # DNSControl Action
 
-![](https://github.com/wblondel/dnscontrol-action/workflows/build/badge.svg)
+![](https://github.com/fatgrizzly/dnscontrol-action/workflows/build/badge.svg)
 
 Deploy your DNS configuration using [GitHub Actions](https://github.com/actions)
 using [DNSControl](https://github.com/StackExchange/dnscontrol/).
@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: DNSControl check
-        uses: wblondel/dnscontrol-action@v4
+        uses: fatgrizzly/dnscontrol-action@v4
         with:
           args: check
 
@@ -54,7 +54,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: DNSControl preview
-        uses: wblondel/dnscontrol-action@v4
+        uses: fatgrizzly/dnscontrol-action@v4
         id: dnscontrol_preview
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -134,7 +134,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: DNSControl push
-        uses: wblondel/dnscontrol-action@v4
+        uses: fatgrizzly/dnscontrol-action@v4
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         with:
